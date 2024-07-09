@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.intro-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+h1 {
+    font-size: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-image: linear-gradient(to right, #9845E8, #33D2FF 30%, #DD5789 55%);
+    color: transparent;
+    background-clip: text;
+    /* display: block; */
+}
+
+.whatsapp-redirect {
+    margin-top: 2rem;
+    width: fit-content;
+    padding: 1%;
+    border-radius: 1vh;
+    background-color: #9845E8;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    transition: background-color 400ms ease-out 100ms
+}
+
+.whatsapp-redirect:hover {
+    background-color: #DD5789;
+    padding: 1%;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
