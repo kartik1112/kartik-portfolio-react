@@ -8,7 +8,7 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-secrets.js
+/secrets.js
 dist
 dist-ssr
 *.local
