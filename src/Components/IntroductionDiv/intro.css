@@ -21,6 +21,7 @@ h1 {
     width: fit-content;
     padding: 1%;
     border-radius: 1vh;
+    text-decoration: none;
     background-color: #9845E8;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -31,6 +32,7 @@ h1 {
 
 .whatsapp-redirect:hover {
     background-color: #DD5789;
+    text-decoration: none;
     padding: 1%;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;

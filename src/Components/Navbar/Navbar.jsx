@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import './navbar.css'
+import { Link, Router } from 'react-router-dom'
 
 const Navbar = () => {
     return (
@@ -11,10 +12,10 @@ const Navbar = () => {
                 }}>KB.</h1>
                 {/* <img width={60} src="assets/logo.svg" alt="" /> */}
                 <div className='buttons-row'>
-                    <div onClick={()=>{console.log("sdfndjnf");}} className='button-navbar' >Projects</div>
-                    <div onClick={()=>{console.log("sdfndjnf");}} className='button-navbar' >Resume</div>
-                    <div onClick={()=>{console.log("sdfndjnf");}} className='button-navbar' >Blogs</div>
-                    <div onClick={()=>{console.log("sdfndjnf");}} className='button-navbar' >Contact</div>
+                    <Link to="/projects" className='button-navbar' >Projects</Link>
+                    <Link to="/resume" className='button-navbar' >Resume</Link>
+                    <Link to="/blogs" className='button-navbar' >Blogs</Link>
+                    <Link to="/contact" className='button-navbar' >Contact</Link>
                 </div>
             </div>
         </div>

@@ -20,6 +20,7 @@
 .button-navbar {
     background-color: #ffffff00;
     padding: 2%;
+    text-decoration: none;
     border-radius: 1vh;
     transition-property: background-color;
     transition-property: color;
