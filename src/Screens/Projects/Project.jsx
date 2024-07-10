@@ -36,21 +36,21 @@ const Project = () => {
         return () => clearInterval(interval); // Cleanup on unmount
     }, []);
 
-    // const octokit = new Octokit({
-    //     auth: githubToken
-    // })
-    // const [tempArr, setTempArr] = useState([]);
+    const octokit = new Octokit({
+        auth: githubToken
+    })
+    const [tempArr, setTempArr] = useState([]);
 
-    // getGitData();
-    // function getGitData() {
-    //     octokit.request('GET /user/repos', {
-    //         type: 'public'
-    //     }).then(response => {
-    //         const temp = response.data
-    //         setTempArr(temp)
-    //         // console.log(temp, "res");
-    //     })
-    // }
+    getGitData();
+    function getGitData() {
+        octokit.request('GET /user/repos', {
+            type: 'public'
+        }).then(response => {
+            const temp = response.data
+            setTempArr(temp)
+            // console.log(temp, "res");
+        })
+    }
     // console.log(tempArr);
 
     return (
@@ -64,7 +64,7 @@ const Project = () => {
                     {/* {console.log(tempArr)} */}
                 </div>
                 <button onClick={() => {
-                    // console.log(tempArr);
+                    console.log(tempArr);
                 }}>ansdn</button>
             </div>
         </div>
