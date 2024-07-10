@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Octokit } from 'octokit'
-import githubToken from '../../../secrets'
+import githubToken from '../../../public/secrets'
 import Navbar from '../../Components/Navbar/Navbar';
 import './Project.css'
 
