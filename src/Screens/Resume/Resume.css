@@ -1,0 +1,17 @@
+.resume{
+    /* align-items: center; */
+    width: 100%;
+    height: 100vh;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+object{
+    height: 100%;
+    align-self: center;
+    width: 90%;
+}
+
