@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Octokit } from 'octokit'
-import githubToken from '../../../public/secrets'
+// import githubToken from '../../../public/secrets'
 import Navbar from '../../Components/Navbar/Navbar';
 import Footer from '../../Components/Footer/Footer';
 import './Project.css'
@@ -9,10 +9,9 @@ import { Link } from 'react-router-dom';
 
 const Project = () => {
 
-    // const axios = new Axios()
-    // axios.headers()
+    // console.log(import.meta.env);
     const octokit = new Octokit({
-        auth: githubToken
+        auth: import.meta.env.VITE_GITHUB_TOKEN
     })
     const [tempArr, setTempArr] = useState([]);
     const [imageAddress, setImageAddress] = useState([]);
@@ -30,7 +29,7 @@ const Project = () => {
         }
         axios(config).then((res) => {
             setImageAddress(...res.data.results)
-            console.log(imageAddress, "sd")
+            // console.log(imageAddress, "sd")
 
         })
         // console.log(data.data.results[0].urls.raw)
@@ -121,7 +120,7 @@ const Project = () => {
                                                 {capitalize(item.name.toString().replaceAll("-", " ").slice(0, 30))}
                                             </p>
                                             <Link to={item.html_url}><img style={{
-                                            }} width='45px' src="public/assets/git-logo.svg" alt="" /></Link>
+                                            }} width='45px' src="assets/git-logo.svg" alt="" /></Link>
                                         </div>
                                         {/* <img src={imageAddress[index].urls.raw} alt="dfgf" /> */}
                                     </div>
