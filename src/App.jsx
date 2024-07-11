@@ -3,7 +3,7 @@ import React from 'react'
 import Home from './Screens/Home/Home'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Project from './Screens/Projects/Project'
-import Blogs from './Screens/Home/Blogs/Blogs'
+import Blogs from './Screens/Blogs/Blogs'
 
 const App = () => {
   return (
