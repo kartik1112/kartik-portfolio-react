@@ -34,7 +34,7 @@ const Intro = () => {
         clearInterval(interval);
       }
 
-      iteration += 1 / 5;
+      iteration += 1 / 3;
     }, 40);
 
     return () => clearInterval(interval); // Cleanup on unmount

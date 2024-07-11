@@ -7,9 +7,13 @@ const Navbar = () => {
     return (
         <div className='navbar'>
             <div className="content">
-                <h1 style={{
-                    fontSize: '1.5rem',
-                }}>KB.</h1>
+                <Link to={"/"} style={{
+                    textDecoration: 'none',
+                }}>
+                    <h1 style={{
+                        fontSize: '1.5rem',
+                    }}>KB.</h1>
+                </Link>
                 {/* <img width={60} src="assets/logo.svg" alt="" /> */}
                 <div className='buttons-row'>
                     <Link to="/projects" className='button-navbar' >Projects</Link>
