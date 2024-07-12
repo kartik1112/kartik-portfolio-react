@@ -8,13 +8,13 @@ const Resume = () => {
         <div className='resume'>
             <Navbar/>
             {/* sdn */}
-            <object
-
-                data='public\assets\KartikButtan_2021PUSCEBADX09829.pdf'
+            {/* <embed
+                data='https://drive.google.com/file/d/1Ngn6a_WCh6p6j0qeP7YlDEFNgLoiEKlj/'
                 type='application/pdf'
                 title='Resume'
             >
-            </object>
+            </embed> */}
+            <iframe src="https://drive.google.com/file/d/1Ngn6a_WCh6p6j0qeP7YlDEFNgLoiEKlj/preview" height={'100%'} allow="autoplay"></iframe>
             <Footer/>
         </div>
     )
