@@ -1,0 +1,38 @@
+.sidebar-skills {
+    /* background-color: rgb(105, 104, 126); */
+    border: 4px dashed grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    margin-left: 3%;
+    width: 130%;
+    padding: 1%;
+}
+
+.skill-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 3% 0% 3% 0%;
+
+}
+
+.skill-grade{
+    display: flex;
+    flex-direction: row;
+    width: 190px;
+    height: 5px;
+    background: rgba(128, 128, 128, 0.4);
+}
+
+.skill-icon{
+    margin-right: 5px;
+}
+
+.skill-name{
+    margin-right: 5px;
+}
