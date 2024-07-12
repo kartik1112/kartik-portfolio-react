@@ -4,12 +4,16 @@ import './styles.css'
 import Navbar from '../../Components/Navbar/Navbar'
 import Intro from '../../Components/IntroductionDiv/Intro'
 import Footer from '../../Components/Footer/Footer'
+import SkillsSidebar from '../../Components/SkillsSidebar/SkillsSidebar'
 const Home = () => {
   return (
     <div className='home-container'>
-      <Navbar/>
-      <Intro/>
-      <Footer/>
+      <Navbar />
+      <div className='home-content'>
+        <Intro />
+        <SkillsSidebar/>
+      </div>
+      <Footer />
     </div>
   )
 }
