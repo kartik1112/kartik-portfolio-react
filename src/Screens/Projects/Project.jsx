@@ -19,14 +19,17 @@ const Project = () => {
     const [username, setUserName] = useState('');
     const [githubProfileLink, setGithubProfileLink] = useState('');
 
-    const randomImages = ["Coder", "Github", "Architecture","random"]
-    let imageQuery = "Coder" ; 
+    const randomImages = ["Coder", "Github", "Architecture", "random"]
+    let imageQuery = "Coder";
     const getRandomImage = () => {
-        imageQuery = randomImages[Math.floor(Math.random() * 5) ]
+        let min = 0
+        let max = 3
+        imageQuery = randomImages[Math.floor(Math.random() * (max - min + 1)) + min]
+        console.log(Math.floor(Math.random() * (max - min + 1)) + min);
     }
 
     const getImage = async () => {
-        await getRandomImage();
+        getRandomImage();
         const config = {
             method: "get",
             url: `https://api.unsplash.com/search/photos?page=1&query=${imageQuery}&client_id=wQw_CuIPNAiy90LjR04lkIR7VMJE6Mj3nSGYGvlD0wY`,
@@ -119,41 +122,41 @@ const Project = () => {
                         : <div>Loading...</div>}
                 </div>
             </div>
-            {(githubProfileLink != '' && imageAddress!=[]) ? (
-            <div className='project-container'>
-                {
-                    tempArr.map((item, index) => {
-                        while (index < 7) {
-                            let temp = "row";
-                            let justifyDir = 'start';
-                            if (index % 2 == 0) {
-                                temp = "row-reverse";
-                                justifyDir = 'end';
+            {(githubProfileLink != '' && imageAddress != []) ? (
+                <div className='project-container'>
+                    {
+                        tempArr.map((item, index) => {
+                            while (index < 7) {
+                                let temp = "row";
+                                let justifyDir = 'start';
+                                if (index % 2 == 0) {
+                                    temp = "row-reverse";
+                                    justifyDir = 'end';
+                                }
+                                return (
+                                    <a href={item.html_url} style={{ display: 'flex', justifyContent: justifyDir, textDecoration: 'none' }} key={index}>
+                                        <div className='project-element' style={{ flexDirection: temp }}>
+                                            {/* {console.log(imageAddress.urls.raw, "oass")} */}
+                                            <div className='project-img'>
+                                                <img width='100%' height='100%' style={{ objectFit: 'cover' }} src={imageAddress[index].urls.regular} alt="" />
+                                            </div>
+                                            <div className='tile-details'>
+                                                <p>
+                                                    {capitalize(item.name.toString().replaceAll("-", " ").slice(0, 30))}
+                                                </p>
+                                                <Link to={item.html_url}><img style={{
+                                                }} width='45px' src="assets/git-logo.svg" alt="" /></Link>
+                                            </div>
+                                            {/* <img src={imageAddress[index].urls.raw} alt="dfgf" /> */}
+                                        </div>
+                                    </a>
+                                )
                             }
-                            return (
-                                <a href={item.html_url} style={{display:'flex', justifyContent:justifyDir, textDecoration: 'none' }} key={index}>
-                                    <div className='project-element' style={{ flexDirection: temp }}>
-                                        {/* {console.log(imageAddress.urls.raw, "oass")} */}
-                                        <div className='project-img'>
-                                        <img width='100%' height='100%' style={{objectFit:'cover'}} src={imageAddress[index].urls.regular} alt="" />
-                                        </div>
-                                        <div className='tile-details'>
-                                            <p>
-                                                {capitalize(item.name.toString().replaceAll("-", " ").slice(0, 30))}
-                                            </p>
-                                            <Link to={item.html_url}><img style={{
-                                            }} width='45px' src="assets/git-logo.svg" alt="" /></Link>
-                                        </div>
-                                        {/* <img src={imageAddress[index].urls.raw} alt="dfgf" /> */}
-                                    </div>
-                                </a>
-                            )
-                        }
-                    })
-                }
-            </div>
+                        })
+                    }
+                </div>
 
-            ):(<div>Loading..</div>)}
+            ) : (<div>Loading..</div>)}
             {/* </div> */}
             <Footer></Footer>
         </div>
