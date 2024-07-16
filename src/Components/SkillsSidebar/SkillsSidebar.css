@@ -36,3 +36,24 @@
 .skill-name{
     margin-right: 5px;
 }
+
+
+@media screen and (max-width: 768px) {
+    .sidebar-skills {
+        width: 90%;
+        margin: 20% 0% 20% 0%;
+    }
+    .skill-container {
+        width: 90%;
+    }
+    .skill-grade{
+        width: 50%;
+    }
+    .skill-name{
+        font-size: small;
+    }
+    .skill-icon{
+        font-size: small;
+    }
+    
+}
