@@ -1,55 +1,103 @@
 .project-container {
-    display: grid;
+    display: flex;
     margin-top: 5rem;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
     gap: 20px;
     /* background-color: aquamarine; */
 }
 
-.project-element{
+.project-element {
     padding: 3%;
+    height: 100px;
     background-color: transparent;
-    border-radius: 1vh;
+    border-radius: 10vh;
     /* border-image: linear-gradient(to right, #9845E8, #33D2FF 30%, #DD5789 55%); */
     border: 1px solid rgba(255, 255, 255, 0.120);
     /* background-image: linear-gradient(to right, #9845E8, #33D2FF 30%, #DD5789 55%);; */
     display: flex;
-    flex-direction: column;
+    width: 70%;
+    flex-direction: row;
     align-items: center;
-    padding: 10% 5% 10% 5%;
+    padding: 10% 0% 10% 0%;
+    margin: 2% 0% 2% 0%;
+    overflow: hidden;
     transition: background-color 500ms;
 }
-.project-element:hover{
+
+.project-element:hover {
     /* padding: 10%; */
     background-color: white;
     /* background-image: linear-gradient(to right, #9845E8, #33D2FF 30%, #DD5789 55%);; */
     display: flex;
-    flex-direction: column;
+    /* flex-direction: row; */
 }
 
-.project-header{
+.project-header {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: space-between;
     align-items: center;
 }
 
-.tile-details{
+.tile-details {
     display: flex;
     align-items: center;
     width: 85%;
     justify-content: space-between;
-    margin-top: 10px;
+    margin: 0% 10% 0% 10%;
     border-radius: 1vh;
     padding: 2% 5% 2% 5%;
 }
 
-p{
+p {
     background-color: transparent;
 }
-img{
-    background-color: transparent;
-    border-radius: 50vh;
+
+.project-img {
+    display: flex;
+    align-items: center;
+    width: 180%;
+    height: 400%;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    .project-container {
+        margin-top: 10%;
+    }
+
+    .project-element {
+        padding: 10% 0% 10% 0%;
+        width: 100%;
+    }
+
+    .project-img {
+        display: flex;
+        align-items: center;
+        width: 180%;
+        height: 400%;
+        overflow: hidden;
+    }
+
+    .tile-details {
+        width: 100%;
+        margin: 0% 0% 0% 0%;
+    }
+
+    .project-element:hover {
+        padding: 10%;
+    }
+
+    .h1-div {
+        height: 100px;
+    }
+
+    .project-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+    }
+
 }

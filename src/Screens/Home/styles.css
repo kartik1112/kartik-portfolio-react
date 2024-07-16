@@ -10,4 +10,21 @@
     /* height: 70%; */
 }
 
+@media screen and (max-width: 768px) {
+    .home-content{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0% 3% 0% 3%;
+    }
+    .home-container{
+        display: flex;
+        flex-direction: column;
+        width:  100%;
+        justify-content: space-between;
+    }
+    
+    
+}
+
 
