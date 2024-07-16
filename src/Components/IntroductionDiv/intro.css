@@ -61,6 +61,9 @@ h1 {
     .whatsapp-redirect {
         padding: 3%;
     }
+    .whatsapp-redirect:hover {
+        padding: 3%;
+    }
     .intro-div{
         height: 100%;
         width: 100%;
