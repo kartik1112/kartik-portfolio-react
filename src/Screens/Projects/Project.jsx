@@ -19,10 +19,17 @@ const Project = () => {
     const [username, setUserName] = useState('');
     const [githubProfileLink, setGithubProfileLink] = useState('');
 
+    const randomImages = ["Coder", "Github", "Architecture","random"]
+    let imageQuery = "Coder" ; 
+    const getRandomImage = () => {
+        imageQuery = randomImages[Math.floor(Math.random() * 5) ]
+    }
+
     const getImage = async () => {
+        await getRandomImage();
         const config = {
             method: "get",
-            url: "https://api.unsplash.com/search/photos?page=1&query=Coder&client_id=wQw_CuIPNAiy90LjR04lkIR7VMJE6Mj3nSGYGvlD0wY",
+            url: `https://api.unsplash.com/search/photos?page=1&query=${imageQuery}&client_id=wQw_CuIPNAiy90LjR04lkIR7VMJE6Mj3nSGYGvlD0wY`,
             headers: {
                 accessKey: "wQw_CuIPNAiy90LjR04lkIR7VMJE6Mj3nSGYGvlD0wY"
             }
@@ -94,7 +101,7 @@ const Project = () => {
         <div>
             <Navbar />
             <div style={{
-                margin: "100px 0px 100px 0px",
+                // margin: "100px 0px 100px 0px",
             }}>
                 <div className='project-header'>
                     <div className='h1-div'>
@@ -128,7 +135,7 @@ const Project = () => {
                                     <div className='project-element' style={{ flexDirection: temp }}>
                                         {/* {console.log(imageAddress.urls.raw, "oass")} */}
                                         <div className='project-img'>
-                                        <img width='100%' height='100%' style={{objectFit:'cover'}} src={imageAddress[index].urls.raw} alt="" />
+                                        <img width='100%' height='100%' style={{objectFit:'cover'}} src={imageAddress[index].urls.regular} alt="" />
                                         </div>
                                         <div className='tile-details'>
                                             <p>
