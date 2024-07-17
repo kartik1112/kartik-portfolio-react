@@ -29,6 +29,7 @@ const Project = () => {
     }
 
     const getImage = async () => {
+        setImageAddress([])
         getRandomImage();
         const config = {
             method: "get",
@@ -138,7 +139,7 @@ const Project = () => {
                                         <div className='project-element' style={{ flexDirection: temp }}>
                                             {/* {console.log(imageAddress.urls.raw, "oass")} */}
                                             <div className='project-img'>
-                                                <img width='100%' height='100%' style={{ objectFit: 'cover' }} src={imageAddress[index].urls.regular} alt="" />
+                                                <img width='100%' height='100%' style={{ objectFit: 'cover' }} src={imageAddress[index].urls.regular} alt="error" />
                                             </div>
                                             <div className='tile-details'>
                                                 <p>
