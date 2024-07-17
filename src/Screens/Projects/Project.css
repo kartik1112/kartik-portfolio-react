@@ -35,7 +35,7 @@
 
 .project-header {
     display: flex;
-    margin: 0% 10% 0% 10%;
+    /* margin: 0% 10% 0% 10%; */
     /* flex-direction: row; */
     justify-content: space-between;
     align-items: center;
