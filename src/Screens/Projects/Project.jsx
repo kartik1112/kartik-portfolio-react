@@ -20,7 +20,7 @@ const Project = () => {
     const [username, setUserName] = useState('');
     const [githubProfileLink, setGithubProfileLink] = useState('');
 
-    const randomImages = ["Coder", "Github", "Architecture", "random"]
+    const randomImages = ["Coder", "Github", "Architecture"]
     let imageQuery = "Coder";
     const getRandomImage = () => {
         let min = 0
@@ -30,7 +30,7 @@ const Project = () => {
     }
 
     const getImage = async () => {
-        setImageAddress([])
+        // setImageAddress([])
         getRandomImage();
         const config = {
             method: "get",
