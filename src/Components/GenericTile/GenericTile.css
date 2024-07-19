@@ -1,12 +1,3 @@
-.project-container {
-    display: flex;
-    margin-top: 5rem;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    /* background-color: aquamarine; */
-}
-
 .project-element {
     padding: 3%;
     height: 100px;
@@ -33,12 +24,12 @@
     /* flex-direction: row; */
 }
 
-.project-header {
+.project-img {
     display: flex;
-    /* margin: 0% 10% 0% 10%; */
-    /* flex-direction: row; */
-    justify-content: space-between;
     align-items: center;
+    width: 180%;
+    height: 400%;
+    overflow: hidden;
 }
 
 .tile-details {
@@ -53,14 +44,6 @@
 
 p {
     background-color: transparent;
-}
-
-.project-img {
-    display: flex;
-    align-items: center;
-    width: 180%;
-    height: 400%;
-    overflow: hidden;
 }
 
 

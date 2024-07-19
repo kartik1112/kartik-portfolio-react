@@ -1,8 +1,8 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
 import './styles.css'
-import Navbar from '../../Components/Navbar/Navbar'
 import Intro from '../../Components/IntroductionDiv/Intro'
+import Navbar from '../../Components/Navbar/Navbar'
 import Footer from '../../Components/Footer/Footer'
 import SkillsSidebar from '../../Components/SkillsSidebar/SkillsSidebar'
 const Home = () => {
@@ -11,7 +11,7 @@ const Home = () => {
       <Navbar />
       <div className='home-content'>
         <Intro />
-        <SkillsSidebar/>
+        <SkillsSidebar />
       </div>
       <Footer />
     </div>

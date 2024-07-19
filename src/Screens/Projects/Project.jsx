@@ -6,6 +6,7 @@ import Footer from '../../Components/Footer/Footer';
 import './Project.css'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import GenericTile from '../../Components/GenericTile/GenericTile';
 
 const Project = () => {
 
@@ -19,7 +20,7 @@ const Project = () => {
     const [username, setUserName] = useState('');
     const [githubProfileLink, setGithubProfileLink] = useState('');
 
-    const randomImages = ["Coder", "Github", "Architecture", "random"]
+    const randomImages = ["Coder", "Github", "Architecture"]
     let imageQuery = "Coder";
     const getRandomImage = () => {
         let min = 0
@@ -29,6 +30,7 @@ const Project = () => {
     }
 
     const getImage = async () => {
+        // setImageAddress([])
         getRandomImage();
         const config = {
             method: "get",
@@ -134,11 +136,12 @@ const Project = () => {
                                     justifyDir = 'end';
                                 }
                                 return (
+                                    // <GenericTile key={index} url = {item.html_url} imgAddress ={imageAddress[index].urls.regular} title = {item.name} justifyDir={justifyDir} flexDir = {temp}/>
                                     <a href={item.html_url} style={{ display: 'flex', justifyContent: justifyDir, textDecoration: 'none' }} key={index}>
                                         <div className='project-element' style={{ flexDirection: temp }}>
                                             {/* {console.log(imageAddress.urls.raw, "oass")} */}
                                             <div className='project-img'>
-                                                <img width='100%' height='100%' style={{ objectFit: 'cover' }} src={imageAddress[index].urls.regular} alt="" />
+                                                <img width='100%' height='100%' style={{ objectFit: 'cover' }} src={imageAddress[index].urls.regular} alt="error" />
                                             </div>
                                             <div className='tile-details'>
                                                 <p>

@@ -9,12 +9,11 @@ const Intro = () => {
 
   // }
 
-
-  useEffect(() => {
+  const hackerTextEffect = (label) => {
     const letters = "qwertyuiopasdfghjklzxcvbnm";
     let interval = null;
 
-    const h1Element = document.getElementById("cipher");
+    const h1Element = document.getElementById(label);
     let iteration = 0;
 
     clearInterval(interval);
@@ -37,23 +36,29 @@ const Intro = () => {
       iteration += 1 / 3;
     }, 40);
 
-    return () => clearInterval(interval); // Cleanup on unmount
+    return () => clearInterval(interval);
+  }
+
+
+  useEffect(() => {
+    hackerTextEffect("cipher")
+    // Cleanup on unmount
   }, []);
 
 
 
   return (
-    <div className='intro-div'>
-      <div className='intro-content'>
-        <p >Hola, I'm</p>
-        <div className='h1-div'>
-          <h1 data-value='Kartik Buttan' id='cipher'>Kartik Buttan</h1>
-        </div>
-        <p >Yo! What I'm upto? To land in a spot where my work rocks the world of product design and development, reaching heaps of users 🚀. I'm all about diving deep into complex problems and coming out victorious. 🧠 Plus, I'm fond of solving puzzles – bring 'em on! I'm all about that tech life, but when I'm not coding, you can catch me making waves in the pool 🏊‍♂️ or crushing it in the gaming world 🎮. Let's level up and make some magic happen!</p>
-        <Link to="https://wa.me/+918285380492" className='whatsapp-redirect'>Get in Touch →</Link>
+    <div className='intro-content'>
+      <h5 >Hola, I'm</h5>
+      <h1 data-value='Kartik Buttan' id='cipher'>Kartik Buttan</h1>
 
-      </div>
+      <h5 >Yo! What I'm upto? To land in a spot where my work rocks the world of product design and development, reaching heaps of users 🚀. I'm all about diving deep into complex problems and coming out victorious. 🧠 Plus, I'm fond of solving puzzles – bring 'em on! I'm all about that tech life, but when I'm not coding, you can catch me making waves in the pool 🏊‍♂️ or crushing it in the gaming world 🎮. Let's level up and make some magic happen!</h5>
+      {/* <div className='h1-div'>
+      </div> */}
+      <Link to="https://wa.me/+918285380492" className='whatsapp-redirect'>Get in Touch →</Link>
     </div>
+    // <div className='intro-div'>
+    // </div>
   )
 }
 
