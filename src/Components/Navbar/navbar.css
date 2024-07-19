@@ -44,7 +44,33 @@
 
 @media screen and (max-width: 768px) {
     .buttons-row {
-        display: none;
+        width: 95%;
+        background-color: #e9e9e96b;
+        padding: 2%;
+        border-radius: 1vh;
+        margin-bottom: 15%;
     }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .button-navbar {
+        /* background-color: #121212; */
+        padding: 2%;
+        font-size: smaller;
+        text-decoration: none;
+        border-radius: 1vh;
+    }
+
+    .button-navbar:hover {
+        background-color: #121212;
+        color: white;
+    
+    }
+
     
 }
