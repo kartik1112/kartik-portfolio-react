@@ -6,6 +6,7 @@ import Footer from '../../Components/Footer/Footer';
 import './Project.css'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import GenericTile from '../../Components/GenericTile/GenericTile';
 
 const Project = () => {
 
@@ -135,6 +136,7 @@ const Project = () => {
                                     justifyDir = 'end';
                                 }
                                 return (
+                                    // <GenericTile key={index} url = {item.html_url} imgAddress ={imageAddress[index].urls.regular} title = {item.name} justifyDir={justifyDir} flexDir = {temp}/>
                                     <a href={item.html_url} style={{ display: 'flex', justifyContent: justifyDir, textDecoration: 'none' }} key={index}>
                                         <div className='project-element' style={{ flexDirection: temp }}>
                                             {/* {console.log(imageAddress.urls.raw, "oass")} */}
