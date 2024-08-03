@@ -105,9 +105,7 @@ const Project = () => {
     return (
         <div>
             <Navbar />
-            <div style={{
-                // margin: "100px 0px 100px 0px",
-            }}>
+            <div>
                 <div className='project-header'>
                     <div className='h1-div'>
                         <h1 data-value='Projects' id='cipher'>Projects</h1>

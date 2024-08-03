@@ -1,17 +1,42 @@
 .resume{
     /* align-items: center; */
     width: 100%;
-    height: 100vh;
+    /* height: 120vh; */
+    padding-top: 10%;
+    padding-bottom: 10%;
     margin: 0%;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    justify-content: space-between;
+    align-items: stretch;
+    align-self: center;
 }
 
 object{
     height: 100%;
     align-self: center;
-    width: 90%;
+    width: 100%;
+}
+
+.resume-div{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: stretch;
+    width: 100%;
+    height: 170vh;
+}
+
+@media screen and (max-width: 768px) {
+    .resume{
+        padding-top: 40%;
+    }
+    .resume-div{
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: stretch;
+        width: 100%;
+        height: 80vh;
+    }
 }
 

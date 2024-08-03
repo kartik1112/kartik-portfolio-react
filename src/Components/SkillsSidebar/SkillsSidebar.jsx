@@ -63,12 +63,11 @@ const SkillsSidebar = () => {
                 skillsSet.map((item) => {
                     return (
                         <div className='skill-container' key={item.name}>
-                            <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent:'center' }}>
+                            <div style={{ display: 'flex',width:'55%', flexDirection: 'row', alignItems: 'center', justifyContent:'left' }}>
                                 <div className='skill-icon' ><img width={25} src={item.icon} alt="" /></div>
                                 <div className='skill-name'>{item.name}</div>
                             </div>
                             <div className='skill-grade' >
-                                
                                 <div style={{ width: (item.skillGrade*10).toString()+"%", backgroundColor: 'white' }}>
                                     {/* <div style={{ width: '50%', backgroundColor: 'white' }}></div> */}
                                 </div>
