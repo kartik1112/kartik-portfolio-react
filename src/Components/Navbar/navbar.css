@@ -49,21 +49,12 @@
 }
 
 @media screen and (max-width: 768px) {
-    .navbar {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        height: 20%;
-        left: 0;
-        justify-content: center;
-        display: flex;
-    }
     .buttons-row {
         width: 95%;
-        background-color: #e9e9e96b;
+        background-image: linear-gradient(to right, #9845E8, #33D2FF 40%, #DD5789 100%);
         padding: 1%;
         border-radius: 1vh;
-        margin-bottom: 15%;
+        margin-bottom: 10%;
     }
 
     .content {
@@ -84,7 +75,6 @@
     .button-navbar:hover {
         background-color: #121212;
         color: white;
-    
     }
 
     
