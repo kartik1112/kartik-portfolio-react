@@ -20,26 +20,17 @@ const Project = () => {
     const [username, setUserName] = useState('');
     const [githubProfileLink, setGithubProfileLink] = useState('');
 
-    const randomImages = ["Coder", "Github", "Architecture"]
-    let imageQuery = "Coder";
-    const getRandomImage = () => {
-        let min = 0
-        let max = 3
-        imageQuery = randomImages[Math.floor(Math.random() * (max - min + 1)) + min]
-        console.log(Math.floor(Math.random() * (max - min + 1)) + min);
-    }
-
     const getImage = async () => {
-        // setImageAddress([])
-        getRandomImage();
+        
         const config = {
             method: "get",
-            url: `https://api.unsplash.com/search/photos?page=1&query=${imageQuery}&client_id=wQw_CuIPNAiy90LjR04lkIR7VMJE6Mj3nSGYGvlD0wY`,
+            url: `https://api.unsplash.com/search/photos?page=1&query=random+tech+abstract&client_id=wQw_CuIPNAiy90LjR04lkIR7VMJE6Mj3nSGYGvlD0wY`,
             headers: {
                 accessKey: "wQw_CuIPNAiy90LjR04lkIR7VMJE6Mj3nSGYGvlD0wY"
             }
         }
         axios(config).then((res) => {
+            
             const temp = res.data.results
             // console.log(temp[1], "sd")
             setImageAddress(temp)
