@@ -1,12 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 .navbar {
-    padding: 1%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    justify-content: center;
+    display: flex;
 }
 
 .content {
     display: flex;
     flex-direction: row;
+    width: 70%;
     justify-content: space-between;
     align-items: center;
 }
@@ -43,10 +49,19 @@
 }
 
 @media screen and (max-width: 768px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 20%;
+        left: 0;
+        justify-content: center;
+        display: flex;
+    }
     .buttons-row {
         width: 95%;
         background-color: #e9e9e96b;
-        padding: 2%;
+        padding: 1%;
         border-radius: 1vh;
         margin-bottom: 15%;
     }
