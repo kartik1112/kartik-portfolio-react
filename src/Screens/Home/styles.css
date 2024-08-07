@@ -17,7 +17,6 @@
     height: 3px;
     background: linear-gradient(to right, #9845E8, #33D2FF 30%, #DD5789 100%);
     border: 0px;
-    /* color:rgba(128, 128, 128, 0.242); */
     z-index: 100;
 }
 

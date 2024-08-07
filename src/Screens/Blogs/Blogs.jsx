@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Navbar from '../../Components/Navbar/Navbar'
 import Footer from '../../Components/Footer/Footer'
 import './Blogs.css'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import axios from 'axios'
 
 const Blogs = () => {
@@ -12,6 +12,10 @@ const Blogs = () => {
   }
 
   const tempArr = [
+    {
+      "title": "🌐Understanding REST APIs in Go: A Guide with Gin",
+      "html_url": "https://medium.com/@kartik11buttan/understanding-rest-apis-in-go-a-guide-with-gin-d6afc4e2a282"
+    },
     {
       "title": "Go Routines: “Concurrency” in Go vs “Async/Await” in JavaScript. Are they same?",
       "html_url": "https://medium.com/@kartik11buttan/go-routines-concurrency-in-go-vs-async-await-in-javascript-are-they-same-d9417cee462b"

@@ -17,11 +17,11 @@ const Home = () => {
         <SkillsSidebar />
       </div>
       <hr className='horizontal-divider' />
-      <div style={{margin:"-15px"}}></div>
+      <div style={{margin:"-25px"}}></div>
       <Project ></Project>
       <div style={{margin:"30px"}}></div>
       <hr className='horizontal-divider'/>
-      <div style={{margin:"-22px"}}></div>
+      <div style={{margin:"-45px"}}></div>
       <Resume></Resume>
       <hr className='horizontal-divider'/>
       <div style={{margin:"-35px"}}></div>

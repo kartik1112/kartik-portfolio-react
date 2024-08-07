@@ -28,7 +28,7 @@ object{
 
 @media screen and (max-width: 768px) {
     .resume{
-        padding-top: 40%;
+        padding-top: 25%;
     }
     .resume-div{
         display: flex;
