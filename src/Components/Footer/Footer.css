@@ -8,3 +8,9 @@
     left: 0;
     z-index: 1000000;
 }
+
+.footer-elements{
+    font-size: small;
+    font-weight: 500;
+}
+
