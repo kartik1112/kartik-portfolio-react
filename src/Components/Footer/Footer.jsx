@@ -4,7 +4,7 @@ import './Footer.css'
 const Footer = () => {
     return (
         <div className='footer'>
-            <p style={{fontWeight:'700'}}>🧑‍💻 Eat → Sleep → Code → Repeat 🧑‍💻</p>
+            <p style={{fontWeight:'500', fontSize:'1em'}}> Learn 🌱 → Code 🚀 → Build 🔥 → Repeat 🎯</p>
         </div>
     )
 }
