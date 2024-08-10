@@ -8,5 +8,6 @@ config();
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: "/kartik-react-portfolio/",
   
 })
