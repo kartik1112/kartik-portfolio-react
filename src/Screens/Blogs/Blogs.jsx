@@ -13,6 +13,10 @@ const Blogs = () => {
 
   const tempArr = [
     {
+      "title": "Let’s “GO” with “WebSocket” : Building a real-time Chat App in GO Lang",
+      "html_url": "https://medium.com/@kartik11buttan/lets-go-with-websocket-building-a-real-time-chat-app-in-go-lang-ad0227cb677a"
+    },
+    {
       "title": "🌐Understanding REST APIs in Go: A Guide with Gin",
       "html_url": "https://medium.com/@kartik11buttan/understanding-rest-apis-in-go-a-guide-with-gin-d6afc4e2a282"
     },

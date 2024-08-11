@@ -46,7 +46,7 @@ const Resume = () => {
       
       <div className="resume-div">
         <iframe
-          src="https://drive.google.com/file/d/1Ngn6a_WCh6p6j0qeP7YlDEFNgLoiEKlj/preview"
+          src="public\assets\KartikButtan_aSDE.pdf"
           height={"100%"}
           allow="autoplay"
         ></iframe>
