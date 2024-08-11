@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useEffect } from "react";
 import "./Resume.css";
 import Navbar from "../../Components/Navbar/Navbar";
@@ -46,7 +47,7 @@ const Resume = () => {
       
       <div className="resume-div">
         <iframe
-          src="public\assets\KartikButtan_aSDE.pdf"
+          src="assets\KartikButtan_aSDE.pdf"
           height={"100%"}
           allow="autoplay"
         ></iframe>
