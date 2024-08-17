@@ -47,7 +47,7 @@ const Resume = () => {
       
       <div className="resume-div">
         <iframe
-          src="assets\Resume\Resume Kartik.pdf"
+          src="assets\Resume\Kartik_SDE_Resume.pdf"
           height={"100%"}
           allow="autoplay"
         ></iframe>
