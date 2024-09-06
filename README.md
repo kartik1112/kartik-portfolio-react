@@ -34,6 +34,3 @@ This project is a personal portfolio website that showcases projects, skills, an
 - Responsive design
 - React | JavaScript | Web Development
 
-## License
-
-This project is licensed under the MIT License.
