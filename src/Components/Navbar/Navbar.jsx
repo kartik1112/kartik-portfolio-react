@@ -9,12 +9,12 @@ const Navbar = () => {
             <div className="content">
                 <Link to={"/"} style={{
                     textDecoration: 'none',
+                    backgroundColor: 'transparent'
                 }}>
                     <h1 style={{
                         fontSize: '1.5rem',
                     }}>KB.</h1>
                 </Link>
-                {/* <img width={60} src="assets/logo.svg" alt="" /> */}
                 <div className='buttons-row'>
                     <Link  to="/" className='button-navbar' >Home</Link>
                     <Link to="/projects" className='button-navbar' >Projects</Link>
