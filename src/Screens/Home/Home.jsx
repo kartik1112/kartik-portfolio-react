@@ -6,7 +6,19 @@ import SkillsSidebar from "../../Components/SkillsSidebar/SkillsSidebar";
 import Project from "../Projects/Project";
 import Resume from "../Resume/Resume";
 import Blogs from "../Blogs/Blogs";
+import ReactGA from "react-ga4";
+
+
+
+
 const Home = () => {
+
+  ReactGA.send({
+    hitType: "pageview",
+    page: "/",
+    title: "Home",
+  })
+
   return (
     <div className="home-container">
       <div className="home-content">

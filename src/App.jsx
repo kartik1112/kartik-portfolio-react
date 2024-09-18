@@ -7,8 +7,10 @@ import Blogs from "./Screens/Blogs/Blogs";
 import Resume from "./Screens/Resume/Resume";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
+import ReactGA from "react-ga4";
 
 const App = () => {
+  ReactGA.initialize("G-JMHGR6XYWZ");
   return (
     <BrowserRouter>
       <Navbar />
