@@ -9,8 +9,8 @@ import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import ReactGA from "react-ga4";
 
-const App = () => {
-  ReactGA.initialize("G-JMHGR6XYWZ");
+const App = () => {  
+  ReactGA.initialize(import.meta.env.VITE_GOOGLE_ANALYTICS);
   return (
     <BrowserRouter>
       <Navbar />
