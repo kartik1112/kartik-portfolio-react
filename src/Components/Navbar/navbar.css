@@ -11,7 +11,12 @@
   justify-content: center;
   display: flex;
   z-index: 100;
-  background: linear-gradient(to right, #9945e859, #33d2ff39 40%, #dd578859 100%);
+  background: linear-gradient(
+    to right,
+    #9945e859,
+    #33d2ff39 40%,
+    #dd578859 100%
+  );
   backdrop-filter: blur(5px);
   /* background-color: #33D2FF; */
 }
@@ -33,26 +38,50 @@
 }
 
 .button-navbar {
-  padding: 2%;
+  padding: 2% 3%;
+  /* margin: 0% 3%; */
   text-decoration: none;
-  border-radius: 1vh;
-  transition-property: background-color;
-  transition-property: color;
-  transition: 500ms ease-in;
+  background-color: transparent;
+  /* border-radius: 1vh; */
+  transition: all 500ms ease;
   font-family: "Space Mono", monospace;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+  position: relative;
+  overflow: visible;
+}
+.button-navbar::after {
+  content: "";
+  background-color: white; /* Set a background color to make it visible */
+  height: 5%;
+  transition: all 300ms ease;
+  width: 100%;
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  z-index: 10;
 }
 
+.button-navbar:hover::after {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
 .button-navbar:hover {
+  color: #121212;
+}
+
+/* .button-navbar:hover {
   background-color: #e9e9e9;
   color: black;
   font-family: "Space Mono", monospace;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-}
+} */
 
 @media screen and (max-width: 768px) {
   .buttons-row {
